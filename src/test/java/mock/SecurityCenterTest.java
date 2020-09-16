@@ -30,7 +30,6 @@ public class SecurityCenterTest {
     @Test
     public void shouldVerifyDoorIsClosed() {
         securityCenter.switchOn();
-        //shouldVerifyDoorIsClosed();
-        verify(mockDoorPanel,times(1)).close();
+        verify(mockDoorPanel, times(1)).close();
     }
 }

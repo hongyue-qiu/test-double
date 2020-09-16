@@ -9,7 +9,7 @@ public class GradeService {
         this.gradeSystem = gradeSystem;
     }
 
-    public double calculateAverageGrades(List<Double> studentId) {
+    public double calculateAverageGrades(long studentId) {
         List<Double> doubles = gradeSystem.gradesFor(studentId);
 
         double averageGrade = doubles.stream()
